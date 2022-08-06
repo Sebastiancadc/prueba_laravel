@@ -11,7 +11,7 @@ class casosController extends Controller
 {
     public function index()
     {
-        $casos = DB::select('SELECT *,casos.id as id,cliente.nombre as nombre_cli FROM casos
+        $casos = DB::select('SELECT *,casos.nombre as nombre,casos.id as id,cliente.nombre as nombre_cli FROM casos
         INNER JOIN cliente ON casos.cliente_id = cliente.id');
         $cliente = cliente::all();
         return view("casos",["casos" => $casos,"cliente" => $cliente]);

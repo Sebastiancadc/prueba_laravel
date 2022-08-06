@@ -82,6 +82,9 @@
                                             <label for="recipient-name" class="col-form-label">Caso:</label>
                                             <select class="custom-select" name="caso" >
                                               <option value="{{$abogado->caso_id}}"> {{$abogado->caso}}</option>
+                                              @foreach ($casos as $caso)
+                                              <option value="{{$caso->id}}"> {{$caso->nombre}}</option>
+                                              @endforeach
                                             </select>
                                           </div>
                                           <div class="modal-footer">

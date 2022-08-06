@@ -92,7 +92,7 @@
                                           <div class="form-group">
                                             <label for="recipient-name" class="col-form-label">Cliente:</label>
                                             <select class="custom-select" name="cliente_id">
-                                              <option selected>{{$caso->nombre_cli}}</option>
+                                              <option value="{{$caso->cliente_id}}">{{$caso->nombre_cli}}</option>
                                               @foreach ($cliente as $clientes)
                                               <option value="{{$clientes->id}}">{{$clientes->nombre}}</option>                
                                               @endforeach
