@@ -24,11 +24,9 @@ Auth::routes();
 
 Route::get('/inicio', 'HomeController@index')->name('inicio');
 Route::get('/abogados', 'abogadosController@index')->name('abogados');
-
 Route::post('/crear_abogado', 'abogadosController@create')->name('crear_abogado');
 Route::post('update_abogado/{id}', 'abogadosController@update')->name('update_abogado');
-
-
+Route::get('/trm', 'abogadosController@trm')->name('trm');
 Route::get('/casos', 'casosController@index')->name('casos');
 Route::post('/crear_caso', 'casosController@create')->name('crear_caso');
 Route::post('update_caso/{id}', 'casosController@update')->name('update_caso');

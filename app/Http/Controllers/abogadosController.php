@@ -39,4 +39,9 @@ class abogadosController extends Controller
         return redirect()->action('abogadosController@index')->with('editar', 'Abogado actualizado correctamente');
         
     }
+
+    public function trm()
+    {
+        dd(file_get_contents('https://api-dolar-argentina.herokuapp.com/api/dolaroficial'));
+    }
 }

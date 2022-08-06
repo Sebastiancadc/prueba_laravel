@@ -25,6 +25,8 @@
                   <a type="submit" class="btn btn-danger"  href="{{ url('abogados') }}">Abogados</a>
                   <a type="submit" class="btn btn-primary" href="{{ url('casos') }}">Casos</a>
                   <a type="submit" class="btn btn-warning" href="{{ url('clientes') }}">Clientes</a>
+                  <a type="submit" class="btn btn-default" href="{{ url('trm') }}">trm</a>
+
                     <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalaaa">Crear</button>
 
                     <br>
